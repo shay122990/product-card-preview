@@ -1,3 +1,100 @@
 body{
     background-color:  hsl(30, 38%, 92%);
 }
+/* - Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%) */
+.product-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px; 
+    width: 100%;
+    height:600px;
+    margin: 120px auto;
+    border-radius: 15px;
+    border: solid 1px green;
+}
+.product-card-image{
+    width:50%;  
+    height: 600px; 
+}
+img{
+    border-radius: 15px 0 0 15px;
+    height: 600px;
+}
+.product-card-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    margin: 0;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 15px 15px 0;
+}
+h3{
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    color:hsl(228, 12%, 48%);
+    padding-bottom: 10px;
+}
+h1{
+    font-family: Fraunces, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0;
+    line-height: 1;
+    padding:10px 20px 10px 0;
+    color: hsl(212, 21%, 14%);
+}
+p{
+    font-family: Montserrat, sans-serif;
+    padding-right: 60px;
+    line-height: 1.6;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color:hsl(228, 12%, 48%) ;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:30px;
+}
+.old-price{
+    font-family: Montserrat, sans-serif;
+    text-decoration: line-through;
+}
+strong{
+    font-family: Fraunces, sans-serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 40px;
+    text-decoration: none !important;
+}
+.addToCartBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4px;
+    width: 80%;
+    background-color: hsl(158, 36%, 37%);
+    padding: 20px;
+    border-radius: 15px;
+}
+button{
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px; 
+    font-weight: 600;
+}
+.cart-icon{
+    width:20px;
+    height: 20px;
+}
