@@ -14,15 +14,23 @@ body{
     margin: 120px auto;
     border-radius: 15px;
 }
+.product-card-image,
+.product-card-info {
+    flex: 1;
+}
 .product-card-image{
     left: 0;   
     height: 500px;  
-}
-img{
-    width:350px;
+    background-image: url(./images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 15px 0 0 15px;
-    height: 500px;
 }
+/* .desktop-image{
+    width:350px;
+    
+    height: 500px;
+} */
 .product-card-info{
     right: 0; 
     display: flex;
@@ -103,22 +111,31 @@ button:hover{
     width:20px;
     height: 20px;
 }
-/* Your existing styles here */
+.mobile-image{
+    display: none;
+}
 
 /* Media query for screens smaller than 700px */
 @media screen and (max-width: 700px) {
     .product-card {
         flex-direction: column;
-        width: 100%; 
+        width: 80%; 
+        height: 100vh;
     }
 
-    .product-card-image,
-    .product-card-info {
+    .product-card-image{
         width: 100%; 
-    }
+        background-image: url(./images/image-product-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px 10px 0 0;
+}
+.product-card-image{
+    border-radius: 0 0 10px 10px;
 
-    img {
-        border-radius: 15px 15px 0 0; 
+}
+    .desktop-image {
+      display: none;
     }
 
     h1,
