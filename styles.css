@@ -1,40 +1,37 @@
 body{
     background-color:  hsl(30, 38%, 92%);
 }
-/* - Very dark blue: hsl(212, 21%, 14%)
-- Dark grayish blue: hsl(228, 12%, 48%)
-- White: hsl(0, 0%, 100%) */
 .product-card{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 700px; 
+    max-width: 700px;
     height:500px;
-    margin: 120px auto;
+    margin: 200px auto;
     border-radius: 15px;
 }
 
 .product-card-image{
-    width:400px;
+    width: 50%;
     left: 0;   
     height: 500px;  
     background-image: url(./images/image-product-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     border-radius: 15px 0 0 15px;
 }
 
 .product-card-info{
-    width:300px;
-    right: 0; 
+    width: 50%;
     display: flex;
     flex-direction: column;
+    right: 0; 
     height: 500px;
     margin: 0;
     background-color: hsl(0, 0%, 100%);
     border-radius: 0 15px 15px 0;
-    padding: 0 40px 0 40px;
 }
 h3{
     font-family: Montserrat, sans-serif;
@@ -43,7 +40,7 @@ h3{
     font-size: 14px;
     text-transform: uppercase;
     color:hsl(228, 12%, 48%);
-    padding: 30px 0 0 0;
+    padding: 30px 0 0 30px;
 }
 h1{
     font-family: Fraunces, sans-serif;
@@ -51,7 +48,7 @@ h1{
     font-size: 34px;
     margin: 0;
     line-height: 1.2;
-    padding: 0 40px 0 0;
+    padding: 0 40px 0 30px;
     color: hsl(212, 21%, 14%);
 }
 p{
@@ -61,14 +58,14 @@ p{
     font-size: 14px;
     letter-spacing: 1px;
     color:hsl(228, 12%, 48%) ;
-    padding: 10px 0 0 0;
+    padding: 10px 50px 0 30px;
 }
 .price{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap:30px;
-    padding:10px 0 10px 0;
+    padding:10px 0 10px 10px;
 }
 .old-price{
     font-family: Montserrat, sans-serif;
@@ -80,17 +77,21 @@ strong{
     color: hsl(158, 36%, 37%);
     font-size: 30px;
     text-decoration: none !important;
+    padding-left: 20px;
 }
-
+.addToCart{
+    padding-left: 30px;
+}
 button{
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 6px;
-    width: 100%;
+    width:90%;
     background-color: hsl(158, 36%, 37%);
     padding: 15px;
-    border-radius: 10px;
+    padding-left: 20px;
+    border-radius: 8px;
     align-items: center;
     border: none;
     color: white;
@@ -113,34 +114,24 @@ button:hover{
 /* Media query for screens smaller than 700px */
 @media screen and (max-width: 700px) {
     .product-card {
-        flex-direction: column;
-        width:420px;
-        height: auto;
-        margin: 0 auto;
+       flex-direction: column;
+       height: 100vh;
+       margin:20px 10px;
     }
 
     .product-card-image{
-       width: 100%;
         background-image: url(./images/image-product-mobile.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         border-radius: 10px 10px 0 0;
-        height: 300px
+        height: 40%;
+        width: 100%;
 }
     .product-card-info{
-       width: 81%;
-       height: auto;
+       width: 100%;
+       height:auto;
        border-radius: 0 0 10px 10px;
-      padding-bottom: 10px;
-}
-    
-  /* button{
-    width:80%;
-  }  */
-   /* h1,
-    h3,
-    p,
-    .price {
-        padding: 10px 20px; 
-    } */
+       padding: 0 0 20px 0;
+}    
 }
