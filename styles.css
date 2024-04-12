@@ -1,6 +1,10 @@
 body{
     background-color:  hsl(30, 38%, 92%);
+    height: 100vh;
+    display: grid;
+    place-items: center;
 }
+
 .product-card{
     display: flex;
     flex-direction: row;
@@ -8,7 +12,6 @@ body{
     align-items: center;
     max-width: 700px;
     height:500px;
-    margin: 200px auto;
     border-radius: 15px;
 }
 
@@ -116,7 +119,6 @@ button:hover{
     .product-card {
        flex-direction: column;
        height: 100vh;
-       margin:20px 10px;
     }
 
     .product-card-image{
